@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		814DC4792C76DFDB0003CFA9 /* DragableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814DC4782C76DFDB0003CFA9 /* DragableView.swift */; };
 		814DC4812C7717270003CFA9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814DC4802C7717270003CFA9 /* ViewModel.swift */; };
 		814DC4832C771D430003CFA9 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814DC4822C771D430003CFA9 /* PlayView.swift */; };
+		81794B3F2C78873F008A2EAD /* BrickKit in Frameworks */ = {isa = PBXBuildFile; productRef = 81794B3E2C78873F008A2EAD /* BrickKit */; };
+		81794B422C7889FB008A2EAD /* BrickKit in Frameworks */ = {isa = PBXBuildFile; productRef = 81794B412C7889FB008A2EAD /* BrickKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81455BE92C76D45F005988E6 /* BrickKit in Frameworks */,
+				81794B3F2C78873F008A2EAD /* BrickKit in Frameworks */,
+				81794B422C7889FB008A2EAD /* BrickKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +103,8 @@
 			name = ShapeAnimation;
 			packageProductDependencies = (
 				81455BE82C76D45F005988E6 /* BrickKit */,
+				81794B3E2C78873F008A2EAD /* BrickKit */,
+				81794B412C7889FB008A2EAD /* BrickKit */,
 			);
 			productName = ShapeAnimation;
 			productReference = 81455BD62C76D385005988E6 /* ShapeAnimation.app */;
@@ -129,7 +135,7 @@
 			);
 			mainGroup = 81455BCD2C76D385005988E6;
 			packageReferences = (
-				81455BE72C76D45F005988E6 /* XCLocalSwiftPackageReference "../../GitHub/Brick_SwiftUI" */,
+				81794B402C7889FB008A2EAD /* XCRemoteSwiftPackageReference "Brick_SwiftUI" */,
 			);
 			productRefGroup = 81455BD72C76D385005988E6 /* Products */;
 			projectDirPath = "";
@@ -369,16 +375,29 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		81455BE72C76D45F005988E6 /* XCLocalSwiftPackageReference "../../GitHub/Brick_SwiftUI" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../GitHub/Brick_SwiftUI;
+/* Begin XCRemoteSwiftPackageReference section */
+		81794B402C7889FB008A2EAD /* XCRemoteSwiftPackageReference "Brick_SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zjinhu/Brick_SwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.4;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		81455BE82C76D45F005988E6 /* BrickKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = BrickKit;
+		};
+		81794B3E2C78873F008A2EAD /* BrickKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BrickKit;
+		};
+		81794B412C7889FB008A2EAD /* BrickKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81794B402C7889FB008A2EAD /* XCRemoteSwiftPackageReference "Brick_SwiftUI" */;
 			productName = BrickKit;
 		};
 /* End XCSwiftPackageProductDependency section */
